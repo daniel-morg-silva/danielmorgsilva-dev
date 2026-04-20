@@ -1,0 +1,506 @@
+baseURL: "https://danielmorgsilva.dev"
+languageCode: "en-us"
+title: "Daniel Morgado Silva"
+theme: hugo-profile
+
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: false
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    contentDir: "content"
+
+  pt:
+    languageName: "Português"
+    weight: 2
+    contentDir: "content/pt"
+    params:
+      hero:
+        intro: "Olá, o meu nome é"
+        title: "Daniel."
+        subtitle: "Construo infraestrutura que funciona de verdade."
+        content: |-
+          Estudante de Engenharia de Software na SDU, focado em Platform Engineering e na infraestrutura por trás de IA fiável. Aprendo a construir, a partir e arranjar de novo.
+        image: /images/Baile.jpg
+        bottomImage:
+          enable: true
+        button:
+          enable: true
+          name: "Curriculum Vitae"
+          url: "/cv.pdf"
+          download: true
+          newPage: false
+        socialLinks:
+          fontAwesomeIcons:
+            - icon: fab fa-github
+              url: https://github.com/daniel-morg-silva
+            - icon: fab fa-linkedin
+              url: https://linkedin.com/in/daniel-silva-3659022a9
+
+      about:
+        enable: true
+        title: "Sobre Mim"
+        image: "/images/Guitarra1.jpg"
+        content: |-
+          
+          Sou estudante de primeiro ano de Licenciatura em Engenharia de Software na University of Southern Denmark, em Sønderborg. O meu foco é Platform Engineering e AI/ML, especificamente a infraestrutura que torna os sistemas de AI fiáveis e reproduzíveis de verdade, não apenas impressionantes numa demo.
+ 
+          Tenho um Kubernetes cluster em bare-metal em casa, em portáteis reciclados, gerido por GitOps com Flux CD, que uso tanto para aprender como para correr serviços reais. Cada problema que encontro fica documentado no repositório: decisões de arquitetura, falhas, soluções. Colaboro também com um professor da SDU na modelação de comunicação emergente entre agentes golfinhos com aprendizagem por reforço.
+ 
+          Fora da tecnologia, preocupo-me com o bem estar animal. Tenho um cão, vou ser voluntário no EAGxNordics, e é uma das razões pelas quais estou a construir nesta área. Sou também Tesoureiro do Conselho de Estudantes da SDU e membro da equipa do bar de sexta-feira do campus.
+ 
+          Pratiquei futebol e judo de competição durante 14 anos a nível nacional. Comecei aos 4, parei aos 18. Esse tipo de compromisso ensina coisas sobre pressão e consistência que são difíceis de aprender noutro sítio qualquer.
+ 
+          A música é uma parte importante de como penso. O meu gosto vai muito para o rock clássico: Pearl Jam, Pink Floyd, Radiohead, Dire Straits, Metallica, mas também ouço muita música portuguesa. Ornatos Violeta, Xutos & Pontapés, Rui Veloso. Toco guitarra e recentemente co fundei uma banda que lançou o primeiro single.
+ 
+          Quando não estou a fazer nada disso, provavelmente estou focado numa aventura do Witcher ou a rever os jogos. Pokemon é um hábito de longa data do qual nunca consegui livrar-me. O CS:GO é o que acontece depois de um dia longo, quando só queres jogar com amigos e desligar o cérebro.
+
+        skills:
+          enable: true
+          title: "Tecnologias com que trabalho regularmente:"
+          groups:
+            - name: "Infraestrutura"
+              items:
+                - "Kubernetes (K3s)"
+                - "Flux CD v2 (GitOps)"
+                - "Docker"
+                - "CloudNativePG"
+                - "MetalLB / NGINX Ingress"
+            - name: "Linguagens & Dados"
+              items:
+                - "Python"
+                - "C#"
+                - "SQL / PostgreSQL"
+            - name: "SO & Ferramentas"
+              items:
+                - "Linux"
+                - "SOPS / age"
+
+      experience:
+        enable: true
+        title: "Experiência"
+        items:
+          - company: "University of Southern Denmark"
+            companyUrl: "https://www.sdu.dk"
+            jobs:
+              - name: "Tesoureiro do Conselho de Estudantes"
+                date: "Mar 2026 – Presente"
+                content: "Eleito pelos colegas para gerir a supervisão financeira e o acompanhamento orçamental das atividades estudantis."
+
+          - company: "Caféen SDU Sønderborg"
+            jobs:
+              - name: "Membro da Equipa"
+                date: "2025 – Presente"
+                content: "Operações semanais do bar de sexta-feira do campus: logística, atendimento, serviços técnicos e coordenação de equipa."
+
+      education:
+        enable: true
+        title: "Educação"
+        items:
+          - title: "Licenciatura em Engenharia de Software"
+            school:
+              name: "University of Southern Denmark (SDU)"
+              url: "https://www.sdu.dk"
+            date: "2025 – Presente"
+            content: |-
+              Primeiro ano. Notas relevantes: 12 em Sistemas Computacionais, 12 em Programação Orientada a Objetos, 10 em Matemática para Ciências (escala dinamarquesa, 12 é o máximo).
+
+          - title: "CS50x: Introdução à Ciência da Computação"
+            school:
+              name: "HarvardX"
+              url: "https://cs50.harvard.edu"
+            date: "2024 – 2025"
+            content: |-
+              Concluído de forma independente antes de entrar na universidade. Cobriu C, Python, SQL, algoritmos e desenvolvimento web em nove conjuntos de problemas.
+
+          - title: "Curso Científico-Tecnológico"
+            school:
+              name: "Escola Secundária António Damásio, Lisboa"
+            date: "2022 – 2025"
+            content: "Nota final: 17/20."
+
+      achievements:
+        enable: true
+        title: "Realizações"
+        items:
+          - title: "Fellowship Sentient Futures — AIxAnimal Welfare"
+            content: "Aceite na coorte de 8 semanas com foco em IA e bem-estar animal. Um dos poucos programas que liga diretamente investigação em IA com ética animal aplicada."
+            url: "https://www.sentientfutures.ai/"
+
+          - title: "IELTS Academic C1 — Proficiência Certificada em Inglês"
+            content: "Certificado pelo British Council. Proficiência profissional completa em inglês."
+
+          - title: "Notas Máximas em Sistemas Computacionais e POO"
+            content: "12/12 (nota máxima na Dinamarca) em ambas as disciplinas no primeiro ano da licenciatura."
+
+          - title: "CS50x — Concluído de Forma Independente"
+            content: "Completei o CS50x da Harvard antes de entrar na universidade, por iniciativa própria."
+
+          - title: "Tesoureiro Eleito — Conselho de Estudantes da SDU"
+            content: "Eleito pelos colegas para gerir a supervisão financeira das atividades estudantis."
+
+          - title: "Primeiro Single Lançado — Shuvit"
+            content: "Co-fundei uma banda e lançámos o primeiro single. Toco guitarra e trato da direção criativa."
+            url: "https://open.spotify.com/track/1QiZfTMHyWpOL5djb583RQ?si=fb3b3f1929dc4b96"
+
+          - title: "14 Anos de Desporto de Competição a Nível Nacional"
+            content: "Futebol e Judo a nível nacional desde os 4 até aos 18 anos, quando saí para a Dinamarca. O tipo de coisa que ensina mais sobre pressão e feedback do que a maioria dos cursos."
+
+      projects:
+        enable: true
+        title: "Projetos"
+        items:
+          - title: "Kubernetes HomeLab"
+            content: |-
+              Cluster Kubernetes bare-metal de dois nós construído de raiz em portáteis reciclados. Gerido inteiramente por GitOps com Flux CD v2. Stack: K3s, MetalLB, NGINX Ingress, CloudNativePG, SOPS com encriptação age. O repositório também funciona como diário de aprendizagem estruturado — cada decisão de arquitetura, problema e solução está documentado.
+            image: /images/projects/homelab.png
+            featured:
+              name: "Ver Repositório"
+              link: https://github.com/daniel-morg-silva/HomeLab
+            badges:
+              - "Kubernetes"
+              - "Flux CD"
+              - "GitOps"
+              - "K3s"
+              - "CloudNativePG"
+              - "Docker"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/daniel-morg-silva/HomeLab
+
+          - title: "Simulação de Comunicação Emergente em Golfinhos"
+            content: |-
+              Projeto de investigação em colaboração com um professor da SDU. Modela comunicação emergente entre agentes-golfinhos usando Python, Mesa (modelação baseada em agentes) e aprendizagem por reforço. Em desenvolvimento ativo.
+            image: /images/projects/dolphin.png
+            badges:
+              - "Python"
+              - "Mesa"
+              - "Reinforcement Learning"
+              - "Agent-Based Modelling"
+
+          - title: "Ferramenta de Análise de Dados de Diabetes"
+            content: |-
+              CLI em Python para carregar, limpar e visualizar um dataset de 100.000 linhas sobre diabetes com pandas. Cobre estatística descritiva, deduplicação, tratamento de valores em falta e visualização univariada.
+            image: /images/projects/diabetes.png
+            featured:
+              name: "Ver Repositório"
+              link: https://github.com/daniel-morg-silva/Diabetics
+            badges:
+              - "Python"
+              - "pandas"
+              - "Data Analysis"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/daniel-morg-silva/Diabetics
+
+          - title: "GreenVille"
+            content: |-
+              Jogo desenvolvido em equipa de cinco pessoas ao longo de todo o ciclo de desenvolvimento. Inclui relatório de projeto estruturado para audiências não técnicas.
+            image: /images/projects/greenville.png
+            featured:
+              name: "Ver Repositório"
+              link: https://github.com/SDU-Project-Group-2/project
+            badges:
+              - "Team Project"
+              - "Game Development"
+            links:
+              - icon: fab fa-github
+                url: https://github.com/SDU-Project-Group-2/project
+
+      contact:
+        enable: true
+        title: "Contacto"
+        content: "Se tens uma pergunta ou queres conversar sobre Platform Engineering, IA ou qualquer outra coisa, é só enviar."
+        btnName: "Enviar Email"
+        formspree:
+          enable: true
+          formId: mpqkpozd
+          emailCaption: "O teu endereço de email"
+          messageCaption: "A tua mensagem"
+          messageRows: 5
+
+      footer:
+        recentPosts:
+          path: "blogs"
+          count: 3
+          title: "Posts Recentes"
+          enable: false
+          disableFeaturedImage: false
+        socialNetworks:
+          github: https://github.com/daniel-morg-silva
+          linkedin: https://linkedin.com/in/daniel-silva-3659022a9
+
+      terms:
+        read: "Ler"
+        toc: "Índice"
+        copyright: "Todos os direitos reservados"
+        emailText: "Vê este site"
+
+      datesFormat:
+        article: "2 Jan 2006"
+        articleList: "2 Jan 2006"
+        articleRecent: "2 Jan 2006"
+
+params:
+  title: "Daniel Morgado Silva"
+  description: "Platform Engineering student at SDU. I build infrastructure that works."
+  favicon: "/fav.png"
+  images:
+    - images/og.png
+
+  animate: true
+
+  navbar:
+    align: ms-auto
+    brandName: "Daniel Silva"
+    showBrandLogo: false
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Daniel."
+    subtitle: "I build infrastructure that actually works."
+    content: |-
+      Software Engineering student at SDU, focused on Platform Engineering and the infrastructure behind reliable AI. I learn by deploying, breaking, and fixing.
+    image: /images/Baile.jpg
+    bottomImage:
+      enable: true
+    button:
+      enable: true
+      name: "Download CV"
+      url: "/cv.pdf"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/daniel-morg-silva
+        - icon: fab fa-linkedin
+          url: https://linkedin.com/in/daniel-silva-3659022a9
+
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/Guitarra1.jpg"
+    content: |-
+    
+      I'm a first-year BSc Software Engineering student at the University of Southern Denmark. My focus is Platform Engineering and AI/ML, specifically the infrastructure that makes AI systems reliable and reproducible, not just impressive in a demo.
+ 
+      I run a bare-metal Kubernetes cluster at home on recycled laptops, managed with GitOps via Flux CD, that I use both to learn and to run real services. Every problem gets documented: architecture decisions, failures, fixes. I also collaborate with an SDU professor modelling emergent communication between dolphin agents using reinforcement learning.
+ 
+      Outside of tech, animal welfare is something I genuinely care about. I have a dog, I am volunteering at EAGxNordics, and it is one of the reasons I am building in this space. I am also Treasurer of the SDU Student Council and part of the campus Friday bar team.
+ 
+      I did competitive football and judo for 14 years at national level. Started at 4, stopped at 18 when I left for Denmark. That kind of commitment teaches you things about pressure and consistency that are hard to get anywhere else.
+ 
+      Music is a big part of how I think. My taste goes mostly towards classic rock: Pearl Jam, Pink Floyd, Radiohead, Dire Straits, Metallica, but I also listen to a lot of Portuguese music. Ornatos Violeta, Xutos & Pontapés, Rui Veloso. I play guitar and recently co-founded a band that released its first single.
+ 
+      When I am not doing any of that, I am probably focused on a Witcher playthrough or replaying the games. Pokemon is a long-term habit I have never managed to shake. CS:GO is what happens after a long day when you just want to play with friends and turn your brain off.
+
+    skills:
+      enable: true
+      title: "Technologies I work with regularly:"
+      groups:
+        - name: "Infrastructure"
+          items:
+            - "Kubernetes (K3s)"
+            - "Flux CD v2 (GitOps)"
+            - "Docker"
+            - "CloudNativePG"
+            - "MetalLB / NGINX Ingress"
+        - name: "Languages & Data"
+          items:
+            - "Python"
+            - "C#"
+            - "SQL / PostgreSQL"
+        - name: "OS & Tooling"
+          items:
+            - "Linux"
+            - "SOPS / age"
+
+  experience:
+    enable: true
+    items:
+      - company: "University of Southern Denmark"
+        companyUrl: "https://www.sdu.dk"
+        jobs:
+          - name: "Treasurer SDU Student Council"
+            date: "Mar 2026 – Present"
+            content: "Elected by fellow students to handle financial oversight and budget tracking for student activities."
+
+      - company: "Caféen SDU Sønderborg"
+        jobs:
+          - name: "Team Member"
+            date: "2025 – Present"
+            content: "Weekly campus Friday bar operations: logistics, customer service, technical services, and team coordination."
+
+  education:
+    enable: true
+    index: false
+    items:
+      - title: "BSc Software Engineering"
+        school:
+          name: "University of Southern Denmark (SDU)"
+          url: "https://www.sdu.dk"
+        date: "2025 – Present"
+        content: |-
+          First year. Notable grades: 12 in Computer Systems, 12 in Object-Oriented Programming, 10 in Mathematics for Science (Danish scale, 12 is the maximum).
+
+      - title: "CS50x: Introduction to Computer Science"
+        school:
+          name: "HarvardX"
+          url: "https://cs50.harvard.edu"
+        date: "2024 – 2025"
+        content: |-
+          Completed independently before starting university. Covered C, Python, SQL, algorithms, and web development across nine problem sets.
+
+      - title: "Sciences & Technologies Secondary Course"
+        school:
+          name: "Escola Secundária António Damásio, Lisbon"
+        date: "2022 – 2025"
+        content: "Final grade: 17/20."
+
+  achievements:
+    enable: true
+    items:
+      - title: "Sentient Futures AI×Animals Fellowship"
+        content: "Accepted into the 8-week cohort focused on AI and animal welfare. One of the few programmes that directly connects AI research with applied animal ethics."
+        url: "https://www.sentientfutures.ai/"
+
+      - title: "IELTS Academic C1 — Certified English Proficiency"
+        content: "Certified by the British Council. Full professional proficiency in English."
+
+      - title: "Top Grades in Computer Systems & OOP"
+        content: "12/12 (maximum in Denmark) in both subjects in the first year of the degree."
+
+      - title: "CS50x — Self-Completed Before University"
+        content: "Finished Harvard's CS50x on my own initiative before starting the degree."
+
+      - title: "Elected Treasurer — SDU Student Council"
+        content: "Elected by peers to manage financial oversight of student activities."
+
+      - title: "Released First Single — Shuvit"
+        content: "Co-founded a band and released the first single. I play guitar and handle creative direction."
+        url: "https://open.spotify.com/track/1QiZfTMHyWpOL5djb583RQ?si=fb3b3f1929dc4b96"
+
+      - title: "14 Years of National-Level Competitive Sport"
+        content: "Football and Judo at national level from age 4 to 18, when I left for Denmark. The kind of thing that teaches you more about pressure and feedback than most courses do."
+
+  projects:
+    enable: true
+    items:
+      - title: "Kubernetes HomeLab"
+        content: |-
+          Two-node bare-metal Kubernetes cluster built from scratch on recycled laptops. Fully managed with GitOps via Flux CD v2. Stack: K3s, MetalLB, NGINX Ingress, CloudNativePG, SOPS with age encryption. The repo also works as a structured learning journal — every architecture decision, problem, and fix is documented.
+        image: /images/projects/homelab.png
+        featured:
+          name: "View Repository"
+          link: https://github.com/daniel-morg-silva/HomeLab
+        badges:
+          - "Kubernetes"
+          - "Flux CD"
+          - "GitOps"
+          - "K3s"
+          - "CloudNativePG"
+          - "Docker"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/daniel-morg-silva/HomeLab
+
+      - title: "Emergent Dolphin Communication Simulation"
+        content: |-
+          Research collaboration with an SDU professor. Models emergent communication between dolphin agents using Python, Mesa (agent-based modelling), and reinforcement learning. Actively in development.
+        image: /images/projects/dolphin.png
+        badges:
+          - "Python"
+          - "Mesa"
+          - "Reinforcement Learning"
+          - "Agent-Based Modelling"
+
+      - title: "Diabetes Data Analysis Tool"
+        content: |-
+          Python CLI for loading, cleaning, and visualising a 100,000-row diabetes dataset using pandas. Covers descriptive statistics, deduplication, missing value handling, and univariate visualisation.
+        image: /images/projects/diabetes.png
+        featured:
+          name: "View Repository"
+          link: https://github.com/daniel-morg-silva/Diabetics
+        badges:
+          - "Python"
+          - "pandas"
+          - "Data Analysis"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/daniel-morg-silva/Diabetics
+
+      - title: "GreenVille"
+        content: |-
+          Game built in a team of five across the full development lifecycle. Includes a structured project report written for non-technical audiences.
+        image: /images/projects/greenville.png
+        featured:
+          name: "View Repository"
+          link: https://github.com/SDU-Project-Group-2/project
+        badges:
+          - "Team Project"
+          - "Game Development"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/SDU-Project-Group-2/project
+
+  contact:
+    enable: true
+    content: "If you have a question or want to talk Platform Engineering, AI, or anything else — just send a message."
+    btnName: "Send Email"
+    formspree:
+      enable: true
+      formId: mpqkpozd
+      emailCaption: "Your email address"
+      messageCaption: "Your message"
+      messageRows: 5
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/daniel-morg-silva
+      linkedin: https://linkedin.com/in/daniel-silva-3659022a9
+
+  listPages:
+    disableFeaturedImage: false
+
+  singlePages:
+    socialShare: false
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  terms:
+    read: "Read"
+    toc: "Table of Contents"
+    copyright: "All rights reserved"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"

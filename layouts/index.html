@@ -1,0 +1,45 @@
+{{ define "head" }}
+<meta name="description" content="{{ .Site.Params.description }}">
+<link rel="stylesheet" href="{{ (printf "%scss/index.css" (.Site.Params.staticPath | default "")) | relURL }}" media="all">
+<link rel="stylesheet" href="{{ (printf "%scss/projects.css" (.Site.Params.staticPath | default "")) | relURL }}" media="all">
+
+<!-- fontawesome -->
+<script defer src="{{ (printf "%sfontawesome-6/all-6.4.2.js" (.Site.Params.staticPath | default "")) | relURL }}"></script>
+{{ end }}
+
+{{ define "title" }}
+{{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+{{- partial "sections/hero/index.html" . -}}
+{{- partial "sections/homelab-widget.html" . -}}
+{{- partial "sections/about.html" . -}}
+{{- partial "sections/experience.html" . -}}
+{{- partial "sections/education.html" . -}}
+{{- partial "sections/projects.html" . -}}
+{{- partial "sections/achievements.html" . -}}
+{{- partial "sections/currently.html" . -}}
+{{- partial "sections/contact.html" . -}}
+
+{{/* Keyboard shortcut modal + hint pill */}}
+{{- $isPt := eq .Site.Language.Lang "pt" -}}
+<div class="kb-help" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Keyboard shortcuts">
+  <div class="kb-help__card">
+    <h4>{{ if $isPt }}Atalhos de teclado{{ else }}Keyboard shortcuts{{ end }}</h4>
+    <dl>
+      <dt><kbd>g</kbd><kbd>h</kbd></dt><dd>{{ if $isPt }}Topo{{ else }}Top{{ end }}</dd>
+      <dt><kbd>g</kbd><kbd>a</kbd></dt><dd>{{ if $isPt }}Sobre{{ else }}About{{ end }}</dd>
+      <dt><kbd>g</kbd><kbd>e</kbd></dt><dd>{{ if $isPt }}Experiência{{ else }}Experience{{ end }}</dd>
+      <dt><kbd>g</kbd><kbd>d</kbd></dt><dd>{{ if $isPt }}Educação{{ else }}Education{{ end }}</dd>
+      <dt><kbd>g</kbd><kbd>p</kbd></dt><dd>{{ if $isPt }}Projetos{{ else }}Projects{{ end }}</dd>
+      <dt><kbd>g</kbd><kbd>r</kbd></dt><dd>{{ if $isPt }}Realizações{{ else }}Achievements{{ end }}</dd>
+      <dt><kbd>g</kbd><kbd>c</kbd></dt><dd>{{ if $isPt }}Contacto{{ else }}Contact{{ end }}</dd>
+      <dt><kbd>?</kbd></dt><dd>{{ if $isPt }}Abrir / fechar esta ajuda{{ else }}Toggle this help{{ end }}</dd>
+      <dt><kbd>Esc</kbd></dt><dd>{{ if $isPt }}Fechar{{ else }}Close{{ end }}</dd>
+    </dl>
+    <div class="kb-help__card__hint">{{ if $isPt }}Pressiona g, depois outra letra{{ else }}Press g, then another letter{{ end }}</div>
+  </div>
+</div>
+<div class="kb-hint-pill" aria-hidden="true"><kbd>?</kbd>&nbsp;{{ if $isPt }}atalhos{{ else }}shortcuts{{ end }}</div>
+{{ end }}

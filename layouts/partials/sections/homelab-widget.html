@@ -1,0 +1,42 @@
+{{- $h := index .Site.Data "homelab" -}}
+{{- $isPt := eq .Site.Language.Lang "pt" -}}
+{{- $lead := cond $isPt "Do cluster a correr neste momento na minha sala ↓" "Live from the cluster currently running in my living room ↓" -}}
+{{- $repoLabel := cond $isPt "repositório →" "repo →" -}}
+{{- $asOfLabel := cond $isPt "atualizado" "as of" -}}
+<section class="homelab-band">
+  <div class="container">
+    <p class="homelab-band__lead">{{ $lead }}</p>
+    <div class="homelab-card" role="figure" aria-label="HomeLab live status">
+      <div class="homelab-card__bar">
+        <span class="dot dot--red"></span>
+        <span class="dot dot--yellow"></span>
+        <span class="dot dot--green"></span>
+        <span class="homelab-card__title">daniel@homelab:~</span>
+        <span class="homelab-card__live">live</span>
+      </div>
+      <div class="homelab-card__body">
+        <span class="homelab-card__line"><span class="homelab-card__prompt">$</span><span class="homelab-card__cmd">kubectl get nodes,pods -A | wc -l</span></span>
+        <div class="homelab-card__out">
+          <div><span class="key">cluster</span><span class="val">{{ $h.cluster.name }}</span></div>
+          <div><span class="key">nodes</span><span class="val">{{ $h.cluster.nodes }} (ready)</span></div>
+          <div><span class="key">pods</span><span class="val">{{ $h.cluster.pods }} (running)</span></div>
+          <div><span class="key">uptime</span><span class="val">{{ $h.cluster.uptime }}</span></div>
+        </div>
+        <span class="homelab-card__line"><span class="homelab-card__prompt">$</span><span class="homelab-card__cmd">flux get kustomizations --no-header</span></span>
+        <div class="homelab-card__out">
+          {{ range $h.stack }}
+          <div><span class="check">✓</span><span class="val">{{ . }}</span></div>
+          {{ end }}
+        </div>
+        <span class="homelab-card__line"><span class="homelab-card__prompt">$</span><span class="homelab-card__cmd">git log -1 --pretty=oneline HomeLab</span></span>
+        <div class="homelab-card__out">
+          <span class="homelab-card__hash">{{ $h.last_commit.sha }}</span><span class="val">{{ $h.last_commit.message }}</span> <span class="homelab-card__meta">· {{ $h.last_commit.when }}</span>
+        </div>
+        <div class="homelab-card__caption">
+          <span>{{ $asOfLabel }} {{ $h.as_of }}</span>
+          <a href="https://github.com/daniel-morg-silva/HomeLab" target="_blank" rel="noopener">{{ $repoLabel }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

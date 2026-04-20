@@ -1,0 +1,23 @@
+{{- $lang := .Site.Language.Lang -}}
+{{- $c := index .Site.Data.currently $lang -}}
+{{- if not $c -}}{{- $c = .Site.Data.currently.en -}}{{- end -}}
+{{- $isPt := eq $lang "pt" -}}
+{{- $heading   := cond $isPt "Atualmente"       "Currently" -}}
+{{- $readLbl   := cond $isPt "A ler"            "Reading" -}}
+{{- $listenLbl := cond $isPt "A ouvir"          "Listening" -}}
+{{- $buildLbl  := cond $isPt "A construir"      "Building" -}}
+{{- $updLbl    := cond $isPt "Atualizado"       "Last updated" -}}
+<section class="currently-strip">
+  <div class="currently-strip__inner">
+    <p class="currently-strip__label">// {{ $heading }}</p>
+    <dl>
+      <dt>{{ $readLbl }}</dt>
+      <dd>{{ $c.reading }}</dd>
+      <dt>{{ $listenLbl }}</dt>
+      <dd>{{ $c.listening }}</dd>
+      <dt>{{ $buildLbl }}</dt>
+      <dd>{{ $c.building }}</dd>
+    </dl>
+    <div class="currently-strip__updated">{{ $updLbl }}: {{ $c.updated }}</div>
+  </div>
+</section>

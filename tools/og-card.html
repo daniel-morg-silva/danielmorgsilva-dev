@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1200px;
+    height: 630px;
+    background: #0f1115;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #e4e6eb;
+    overflow: hidden;
+  }
+  .card {
+    width: 1200px;
+    height: 630px;
+    padding: 80px 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background:
+      radial-gradient(ellipse at top right, rgba(100, 255, 218, 0.08), transparent 55%),
+      radial-gradient(ellipse at bottom left, rgba(100, 255, 218, 0.04), transparent 50%),
+      #0f1115;
+    position: relative;
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 96px;
+    width: 64px;
+    height: 4px;
+    background: #64ffda;
+    border-radius: 2px;
+  }
+  .top {
+    margin-top: 28px;
+  }
+  .kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 22px;
+    font-weight: 500;
+    color: #8c96a3;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .middle {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  h1 {
+    font-size: 104px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.035em;
+    color: #f2f3f5;
+  }
+  h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #b0b3b8;
+    letter-spacing: -0.01em;
+  }
+  h2 .sep {
+    color: #64ffda;
+    margin: 0 14px;
+    font-weight: 400;
+  }
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .url {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 24px;
+    font-weight: 500;
+    color: #e4e6eb;
+  }
+  .url .slash { color: #64ffda; }
+  .tagline {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px;
+    color: #8c96a3;
+    text-align: right;
+    max-width: 520px;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="top">
+      <div class="kicker">Platform Engineering &middot; AI Infrastructure</div>
+    </div>
+    <div class="middle">
+      <h1>Daniel Morgado Silva</h1>
+      <h2>Software Engineering<span class="sep">/</span>SDU Sønderborg</h2>
+    </div>
+    <div class="bottom">
+      <div class="url"><span class="slash">&gt;</span> danielmorgsilva.dev</div>
+      <div class="tagline">I build infrastructure<br>that actually works.</div>
+    </div>
+  </div>
+</body>
+</html>

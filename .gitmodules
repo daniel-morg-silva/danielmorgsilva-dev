@@ -1,0 +1,6 @@
+[submodule "aafu"]
+	path = aafu
+	url = git@github.com:darshanbaral/aafu.git
+[submodule "themes/hugo-profile"]
+	path = themes/hugo-profile
+	url = git@github.com:gurusabarish/hugo-profile.git

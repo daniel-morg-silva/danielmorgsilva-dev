@@ -1,0 +1,17 @@
+cluster:
+  name: homelab-k3s
+  nodes: 2
+  pods: 14
+  uptime: "53d 11h"
+stack:
+  - "K3s"
+  - "Flux CD v2"
+  - "CloudNativePG"
+  - "MetalLB"
+  - "NGINX Ingress"
+  - "SOPS / age"
+last_commit:
+  message: "feat(cnpg): bump to v1.24 minor"
+  when: "2h ago"
+  sha: "a1b2c3d"
+as_of: "2026-04-20 21:00 UTC"
