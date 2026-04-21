@@ -1,0 +1,8 @@
+public/
+node_modules/
+resources/
+.git/
+.github/
+docs/
+tools/
+*.md
