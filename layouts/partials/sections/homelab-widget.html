@@ -1,6 +1,6 @@
 {{- $h := index .Site.Data "homelab" -}}
 {{- $isPt := eq .Site.Language.Lang "pt" -}}
-{{- $lead := cond $isPt "Do cluster a correr neste momento na minha sala ↓" "Live from the cluster currently running in my living room ↓" -}}
+{{- $lead := cond $isPt "Do cluster a correr neste momento no meu quarto ↓" "Live from the cluster currently running in my bedroom ↓" -}}
 {{- $repoLabel := cond $isPt "repositório →" "repo →" -}}
 {{- $asOfLabel := cond $isPt "atualizado" "as of" -}}
 <section class="homelab-band">
