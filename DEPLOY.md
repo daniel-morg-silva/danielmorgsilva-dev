@@ -48,7 +48,7 @@ Run all steps below in the same terminal session — the `TAG` and `IMAGE` varia
 
 ```bash
 TAG=v1   # change this each deploy
-IMAGE=ghcr.io/YOUR_GITHUB_USERNAME/danielmorgsilva-dev
+IMAGE=ghcr.io/daniel-morg-silva/danielmorgsilva-dev
 ```
 
 ### 2. Build the Docker image
