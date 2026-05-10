@@ -20,7 +20,7 @@ languages:
       hero:
         intro: "Olá, o meu nome é"
         title: "Daniel."
-        subtitle: "Construo infraestrutura que funciona de verdade."
+        subtitle: "A Aprender a Contruir Infrastrutura que Funciona"
         content: |-
           Estudante de Engenharia de Software na SDU, focado em Platform Engineering e na infraestrutura por trás de IA fiável. Aprendo a construir, a partir e arranjar de novo.
         image: /images/Baile.jpg
@@ -273,7 +273,7 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Daniel."
-    subtitle: "I build infrastructure that actually works."
+    subtitle: "I'm learning how to build infrastructure that works."
     content: |-
       Software Engineering student at SDU, focused on Platform Engineering and the infrastructure behind reliable AI. I learn by deploying, breaking, and fixing.
     image: /images/Baile.jpg
