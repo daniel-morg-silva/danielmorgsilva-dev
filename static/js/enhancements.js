@@ -24,7 +24,7 @@
           io.unobserve(entry.target);
         }
       });
-    }, { threshold: 0, rootMargin: '0px 0px -80px 0px' });
+    }, { threshold: 0, rootMargin: '0px 0px 0px 0px' });
     Array.prototype.forEach.call(targets, function (el) {
       el.classList.add('reveal');
       io.observe(el);
@@ -34,43 +34,6 @@
         el.classList.add('is-visible');
         io.unobserve(el);
       }
-    });
-  }
-
-  /* ---------- Hero parallax ---------- */
-  function setupParallax() {
-    if (prefersReducedMotion) return;
-    var hero = document.getElementById('hero');
-    if (!hero) return;
-    var content = hero.querySelector('.content');
-    var image   = hero.querySelector('.image');
-    if (!content && !image) return;
-
-    var rafId = null;
-    var targetX = 0, targetY = 0;
-    var currentX = 0, currentY = 0;
-
-    function loop() {
-      currentX += (targetX - currentX) * 0.08;
-      currentY += (targetY - currentY) * 0.08;
-      if (content) content.style.transform = 'translate3d(' + (currentX * -6) + 'px,' + (currentY * -6) + 'px,0)';
-      if (image)   image.style.transform   = 'translate3d(' + (currentX * -12) + 'px,' + (currentY * -12) + 'px,0)';
-      if (Math.abs(targetX - currentX) > 0.01 || Math.abs(targetY - currentY) > 0.01) {
-        rafId = requestAnimationFrame(loop);
-      } else {
-        rafId = null;
-      }
-    }
-
-    hero.addEventListener('mousemove', function (e) {
-      var rect = hero.getBoundingClientRect();
-      targetX = (e.clientX - rect.left) / rect.width - 0.5;
-      targetY = (e.clientY - rect.top) / rect.height - 0.5;
-      if (!rafId) rafId = requestAnimationFrame(loop);
-    });
-    hero.addEventListener('mouseleave', function () {
-      targetX = 0; targetY = 0;
-      if (!rafId) rafId = requestAnimationFrame(loop);
     });
   }
 
@@ -141,7 +104,6 @@
 
   function init() {
     setupReveal();
-    setupParallax();
     setupKeyboard();
   }
 

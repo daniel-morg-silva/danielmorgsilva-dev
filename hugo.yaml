@@ -20,7 +20,7 @@ languages:
       hero:
         intro: "Olá, o meu nome é"
         title: "Daniel."
-        subtitle: "A Aprender a Contruir Infrastrutura que Funciona"
+        subtitle: "A aprender a contruir infrastrutura que funciona"
         content: |-
           Estudante de Engenharia de Software na SDU, focado em Platform Engineering e na infraestrutura por trás de IA fiável. Aprendo a construir, a partir e arranjar de novo.
         image: /images/Baile.jpg
@@ -49,9 +49,9 @@ languages:
  
           Tenho um Kubernetes cluster em bare-metal em casa, em portáteis reciclados, gerido por GitOps com Flux CD, que uso tanto para aprender como para correr serviços reais. Cada problema que encontro fica documentado no repositório: decisões de arquitetura, falhas, soluções. Colaboro também com um professor da SDU na modelação de comunicação emergente entre agentes golfinhos com aprendizagem por reforço.
  
-          Fora da tecnologia, preocupo-me com o bem estar animal. Tenho um cão, vou ser voluntário no EAGxNordics, e é uma das razões pelas quais estou a construir nesta área. Sou também Tesoureiro do Conselho de Estudantes da SDU e membro da equipa do bar de sexta-feira do campus.
+          Sou também Tesoureiro do Conselho de Estudantes da SDU e membro da equipa do bar de sexta-feira do campus.
  
-          Pratiquei futebol e judo de competição durante 14 anos a nível nacional. Comecei aos 4, parei aos 18. Esse tipo de compromisso ensina coisas sobre pressão e consistência que são difíceis de aprender noutro sítio qualquer.
+          Pratiquei futebol e judo de competição durante 14 anos a nível nacional. Comecei aos 4, parei aos 18. Este tipo de compromisso ensina coisas sobre pressão e consistência que são difíceis de aprender noutro sítio qualquer.
  
           A música é uma parte importante de como penso. O meu gosto vai muito para o rock clássico: Pearl Jam, Pink Floyd, Radiohead, Dire Straits, Metallica, mas também ouço muita música portuguesa. Ornatos Violeta, Xutos & Pontapés, Rui Veloso. Toco guitarra e recentemente co fundei uma banda que lançou o primeiro single.
  
@@ -273,7 +273,7 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Daniel."
-    subtitle: "I'm learning how to build infrastructure that works."
+    subtitle: "Learning how to build infrastructure that works."
     content: |-
       Software Engineering student at SDU, focused on Platform Engineering and the infrastructure behind reliable AI. I learn by deploying, breaking, and fixing.
     image: /images/Baile.jpg
@@ -301,9 +301,7 @@ params:
       I'm a first-year BSc Software Engineering student at the University of Southern Denmark. My focus is Platform Engineering and AI/ML, specifically the infrastructure that makes AI systems reliable and reproducible, not just impressive in a demo.
  
       I run a bare-metal Kubernetes cluster at home on recycled laptops, managed with GitOps via Flux CD, that I use both to learn and to run real services. Every problem gets documented: architecture decisions, failures, fixes. I also collaborate with an SDU professor modelling emergent communication between dolphin agents using reinforcement learning.
- 
-      Outside of tech, animal welfare is something I genuinely care about. I have a dog, I am volunteering at EAGxNordics, and it is one of the reasons I am building in this space. I am also Treasurer of the SDU Student Council and part of the campus Friday bar team.
- 
+  
       I did competitive football and judo for 14 years at national level. Started at 4, stopped at 18 when I left for Denmark. That kind of commitment teaches you things about pressure and consistency that are hard to get anywhere else.
  
       Music is a big part of how I think. My taste goes mostly towards classic rock: Pearl Jam, Pink Floyd, Radiohead, Dire Straits, Metallica, but I also listen to a lot of Portuguese music. Ornatos Violeta, Xutos & Pontapés, Rui Veloso. I play guitar and recently co-founded a band that released its first single.

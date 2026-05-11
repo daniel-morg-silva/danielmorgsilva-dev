@@ -344,20 +344,20 @@ body.dark .kb-help__card__hint { border-top-color: rgba(255, 255, 255, 0.08); }
 }
 #hero .image img {
   width: 100%;
-  min-height: 65vh;
+  min-height: 55vh;
   object-fit: cover;
   object-position: top center;
 }
 
 /* ---------- Hero text sizing ---------- */
 #hero h1 {
-  font-size: clamp(68px, 11vw, 124px) !important;
+  font-size: clamp(60px, 10vw, 110px) !important;
 }
 #hero h2 {
-  font-size: clamp(48px, 9vw, 86px) !important;
+  font-size: clamp(42px, 8vw, 76px) !important;
 }
 #hero .subtitle {
-  font-size: clamp(17px, 2.2vw, 22px) !important;
+  font-size: clamp(16px, 2vw, 20px) !important;
 }
 
 /* ---------- Fix theme toggle vertical alignment ---------- */
